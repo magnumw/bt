@@ -133,7 +133,7 @@ class Backtest(object):
 
         # we want to reuse strategy logic - copy it!
         # basically strategy is a template
-        self.strategy = deepcopy(strategy)
+        self.strategy = strategy
         self.strategy.use_integer_positions(integer_positions)
 
         # add virtual row at t0-1day with NaNs
